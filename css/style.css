@@ -178,3 +178,14 @@ h2 {
   border-radius: 12px;
   background: #35A89E;
 }
+
+/* ===== Escritorio (desde 992 px) ===== */
+@media (min-width: 992px) {
+  .hero { min-height: 640px; padding-bottom: 140px; } /* hero más alto */
+  .hero h1 { font-size: 3.25rem; max-width: 600px; }
+  .search-card { margin-top: -100px; }                /* el buscador en una fila es más bajo */
+  .slide { height: 360px; }                           /* carrusel más alto */
+  .offer-img { height: 200px; }
+  .photo { height: 340px; }
+  .menu-panel { width: 240px; }
+}

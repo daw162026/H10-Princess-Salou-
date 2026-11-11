@@ -117,3 +117,9 @@ h3 {
   background: var(--h10-blue);
   color: #fff;
 }
+
+/* ===== Escritorio (desde 992 px) ===== */
+@media (min-width: 992px) {
+  .room-img { height: 220px; }
+  .menu-panel { width: 240px; }
+}

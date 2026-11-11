@@ -6,7 +6,7 @@
   <title>H10 Salou Princess · Completar reserva</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="complete-reservation.css">
+  <link rel="stylesheet" href="./css/complete-reservation.css">
 </head>
 <body>
 
@@ -50,7 +50,7 @@
               <div class="summary-row"><span>Noches</span><strong id="sum-noches">3</strong></div>
               <div class="summary-row"><span>Precio por noche</span><strong id="sum-precio">85 €</strong></div>
               <div class="d-flex justify-content-between align-items-center pt-3">
-                <span class="text-secondary">Total (simulado)</span>
+                <span class="text-secondary">Total</span>
                 <span class="total" id="sum-total">255 €</span>
               </div>
             </div>
@@ -89,8 +89,7 @@
               </div>
             </div>
 
-            <h2 class="h4 mb-3">Datos de pago (simulados)</h2>
-            <div class="pay-note p-3 mb-3">⚠️ No introduzcas datos bancarios reales. Usa números inventados: no se guardan ni se procesan.</div>
+            <h2 class="h4 mb-3">Datos de pago</h2>
             <div class="row g-3 mb-4">
               <div class="col-12">
                 <label for="titular" class="form-label">Titular de la tarjeta</label>
@@ -100,7 +99,7 @@
               <div class="col-12">
                 <label for="tarjeta" class="form-label">Número de tarjeta</label>
                 <input type="text" class="form-control" id="tarjeta" inputmode="numeric" placeholder="0000 0000 0000 0000" pattern="[0-9 ]{16,19}" autocomplete="off" required>
-                <div class="invalid-feedback">Introduce 16 dígitos (ficticios).</div>
+                <div class="invalid-feedback">Introduce 16 dígitos.</div>
               </div>
               <div class="col-6">
                 <label for="caducidad" class="form-label">Caducidad</label>
@@ -116,7 +115,7 @@
 
             <div class="form-check mb-4">
               <input class="form-check-input" type="checkbox" id="acepto" required>
-              <label class="form-check-label small" for="acepto">Acepto las condiciones de reserva (simulado).</label>
+              <label class="form-check-label small" for="acepto">Acepto las condiciones de reserva.</label>
               <div class="invalid-feedback">Debes aceptar las condiciones.</div>
             </div>
 
@@ -134,9 +133,8 @@
       <div class="modal-content rounded-4 text-center p-3">
         <div class="modal-body">
           <div class="display-4">✅</div>
-          <h2 class="h4 mt-2" id="confirmacionTitulo">¡Reserva simulada completada!</h2>
+          <h2 class="h4 mt-2" id="confirmacionTitulo">¡Reserva completada!</h2>
           <p class="text-secondary mb-1">Referencia: <strong id="referencia">—</strong></p>
-          <p class="text-secondary small">Esto es una demostración: no se ha reservado ni cobrado nada.</p>
           <a href="index.html" class="btn btn-h10 px-4 mt-2">Volver al inicio</a>
         </div>
       </div>
@@ -147,8 +145,8 @@
   <footer class="footer-h10 py-4">
     <div class="container px-3 small">
       <p class="mb-1">📍 Dirección del hotel, Salou (Tarragona)</p>
-      <p class="mb-1 small">📞 +34 000 000 000</p>
-      <p class="mb-0 small">✉️ info@ejemplo.com</p>
+      <p class="mb-1 small">📞 +34 900 444 466</p>
+      <p class="mb-0 small">✉️ h10.salou.princess@h10hotels.com</p>
       <p class="mb-0 opacity-75">© 2026 Proyecto académico · Diseño propio inspirado en H10 Salou Princess</p>
     </div>
   </footer>
